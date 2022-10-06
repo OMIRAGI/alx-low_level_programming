@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+
+
 /**
  * string_nconcat - len of 1st str, len of 2nd str, if n < 2nd, 2nd = n
  * 2nd + 1st = total len, malloc + null byte, loop to insert into temp arr
@@ -17,9 +19,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
-		s2 = "";
+		s2 = ""
 
-	for (i = 0; s1[i] != '\0'; i++)
+			for (i = 0; s1[i] != '\0'; i++)
 	{
 	}
 
@@ -28,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	if (n < j)
-			j = n;
+		j = n;
 
 	j += i;
 	arr = malloc(sizeof(char *) * (j + 1));
